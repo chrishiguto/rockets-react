@@ -1404,6 +1404,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.1.2":
+  version: 7.26.0
+  resolution: "@babel/runtime@npm:7.26.0"
+  dependencies:
+    regenerator-runtime: "npm:^0.14.0"
+  checksum: 10c0/12c01357e0345f89f4f7e8c0e81921f2a3e3e101f06e8eaa18a382b517376520cd2fa8c237726eb094dab25532855df28a7baaf1c26342b52782f6936b07c287
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.17.2, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.25.0
   resolution: "@babel/runtime@npm:7.25.0"
@@ -1714,6 +1723,49 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@concepta/react-data-viz@workspace:packages/react-data-viz":
+  version: 0.0.0-use.local
+  resolution: "@concepta/react-data-viz@workspace:packages/react-data-viz"
+  dependencies:
+    "@cubejs-client/core": "npm:^1.0.0"
+    "@cubejs-client/react": "npm:^1.0.0"
+    "@react-leaflet/core": "npm:^3.0.0"
+    "@types/leaflet": "npm:^1"
+    "@types/leaflet.markercluster": "npm:^1"
+    "@types/react": "npm:^18.2.0"
+    "@types/react-dom": "npm:^18.2.0"
+    "@types/react-leaflet": "npm:^3.0.0"
+    leaflet: "npm:^1.9.4"
+    leaflet.markercluster: "npm:^1.5.3"
+    react-leaflet: "npm:4.2.1"
+    react-router: "npm:^6.26.0"
+    react-router-dom: "npm:^6.26.0"
+    react-toastify: "npm:^10.0.5"
+    zustand: "npm:^5.0.2"
+  peerDependencies:
+    "@cubejs-client/core": ^1.0.0
+    "@cubejs-client/react": ^1.0.0
+    leaflet: ^1.9.4
+    leaflet.markercluster: ^1.5.3
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  dependenciesMeta:
+    "@cubejs-client/core":
+      optional: true
+    "@cubejs-client/react":
+      optional: true
+    leaflet:
+      optional: true
+    leaflet.markercluster:
+      optional: true
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  languageName: unknown
+  linkType: soft
+
 "@concepta/react-material-ui@workspace:packages/react-material-ui":
   version: 0.0.0-use.local
   resolution: "@concepta/react-material-ui@workspace:packages/react-material-ui"
@@ -1780,6 +1832,35 @@ __metadata:
   dependencies:
     "@jridgewell/trace-mapping": "npm:0.3.9"
   checksum: 10c0/05c5368c13b662ee4c122c7bfbe5dc0b613416672a829f3e78bc49a357a197e0218d6e74e7c66cfcd04e15a179acab080bd3c69658c9fbefd0e1ccd950a07fc6
+  languageName: node
+  linkType: hard
+
+"@cubejs-client/core@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@cubejs-client/core@npm:1.0.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.1.2"
+    core-js: "npm:^3.6.5"
+    cross-fetch: "npm:^3.0.2"
+    dayjs: "npm:^1.10.4"
+    ramda: "npm:^0.27.2"
+    url-search-params-polyfill: "npm:^7.0.0"
+    uuid: "npm:^8.3.2"
+  checksum: 10c0/348095509972e51385e08561fa739bd3b734a1656ff645dce4652ec2233572cc8bba3eaea91cd61e3acf1524442c962cd4084bf00b3432dbc2c905d95438b8aa
+  languageName: node
+  linkType: hard
+
+"@cubejs-client/react@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@cubejs-client/react@npm:1.0.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.1.2"
+    "@cubejs-client/core": "npm:^1.0.0"
+    core-js: "npm:^3.6.5"
+    ramda: "npm:^0.27.2"
+  peerDependencies:
+    react: ">=16.10.2"
+  checksum: 10c0/6131febe942be9ae963c2b12343bbfda8c11e40037e17368e00bc84b789fcd1f90d3011ba79fe82fb916bd2aaf0c7e9f135cd0d55c64b431009681c6b27d6098
   languageName: node
   linkType: hard
 
@@ -4034,6 +4115,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-leaflet/core@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@react-leaflet/core@npm:2.1.0"
+  peerDependencies:
+    leaflet: ^1.9.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: 10c0/d5218c79ab9decd458e1fa8a0ec3757542e3ea4e569afa151a32ef0e9ceb63a13174f3fbc740fe0d514df8b0b3e30d913bfb0b8b661dac13924934d7e430bfc9
+  languageName: node
+  linkType: hard
+
+"@react-leaflet/core@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@react-leaflet/core@npm:3.0.0"
+  peerDependencies:
+    leaflet: ^1.9.0
+    react: ^19.0.0
+    react-dom: ^19.0.0
+  checksum: 10c0/1e20f92ea99d378121d7ba57b9571ca3a67a86247729d8cd5726ded26105fcbffbbdf727da34b2ad5976438979819a38c93b94389313abb3ff80ca81632609a6
+  languageName: node
+  linkType: hard
+
 "@remix-run/router@npm:1.19.2":
   version: 1.19.2
   resolution: "@remix-run/router@npm:1.19.2"
@@ -5173,6 +5276,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/geojson@npm:*":
+  version: 7946.0.15
+  resolution: "@types/geojson@npm:7946.0.15"
+  checksum: 10c0/535d21ceaa01717cfdacc8f3dcbb7bc60a04361f401d80e60be22ce8dea23d669e4d0026c2c3da1168e807ee5ad4c9b2b4913ecd78eb0aabbcf76e92dc69808d
+  languageName: node
+  linkType: hard
+
 "@types/glob@npm:^7.1.1":
   version: 7.2.0
   resolution: "@types/glob@npm:7.2.0"
@@ -5261,6 +5371,24 @@ __metadata:
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
   checksum: 10c0/6bf5337bc447b706bb5b4431d37686aa2ea6d07cfd6f79cc31de80170d6ff9b1c7384a9c0ccbc45b3f512bae9e9f75c2e12109806a15331dc94e8a8db6dbb4ac
+  languageName: node
+  linkType: hard
+
+"@types/leaflet.markercluster@npm:^1":
+  version: 1.5.5
+  resolution: "@types/leaflet.markercluster@npm:1.5.5"
+  dependencies:
+    "@types/leaflet": "npm:*"
+  checksum: 10c0/3645fc0f49fefe955732335f89746c9063b9e9cd2ecca254b3d98376ffd44e49d0b0c7a50dc5b8753b1f65a7bd95def129c76e5407c4a15a65f1e5f2d7db65e3
+  languageName: node
+  linkType: hard
+
+"@types/leaflet@npm:*, @types/leaflet@npm:^1":
+  version: 1.9.15
+  resolution: "@types/leaflet@npm:1.9.15"
+  dependencies:
+    "@types/geojson": "npm:*"
+  checksum: 10c0/6537da4107f833e38359ca9e98e2c161d686af58ff8873c65c102e146b881761ca6212b08fae4e755380ee001073f856ee46c5ea25592a53f39e2b9e5d934d42
   languageName: node
   linkType: hard
 
@@ -5397,6 +5525,15 @@ __metadata:
   dependencies:
     "@types/react": "npm:^17"
   checksum: 10c0/672cdce0e5ac89b85bac9576d3f4e3ac55360ed1cfb69bda93458abbb5ce12d19b345519a930a354a2835910aede078d831d25686090a341d00ad0c190269152
+  languageName: node
+  linkType: hard
+
+"@types/react-leaflet@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@types/react-leaflet@npm:3.0.0"
+  dependencies:
+    react-leaflet: "npm:*"
+  checksum: 10c0/ea90ed346c2bb21950c8144a3319505bfceb8f98f49e624d1a821d578405c5a63da6224c46f7c948cf4031ebe0100f3aa8ed5204023ef0861705af32c99b126b
   languageName: node
   linkType: hard
 
@@ -8043,6 +8180,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js@npm:^3.6.5":
+  version: 3.39.0
+  resolution: "core-js@npm:3.39.0"
+  checksum: 10c0/f7602069b6afb2e3298eec612a5c1e0c3e6a458930fbfc7a4c5f9ac03426507f49ce395eecdd2d9bae9024f820e44582b67ffe16f2272395af26964f174eeb6b
+  languageName: node
+  linkType: hard
+
 "core-util-is@npm:1.0.2":
   version: 1.0.2
   resolution: "core-util-is@npm:1.0.2"
@@ -8100,6 +8244,15 @@ __metadata:
   version: 1.1.1
   resolution: "create-require@npm:1.1.1"
   checksum: 10c0/157cbc59b2430ae9a90034a5f3a1b398b6738bf510f713edc4d4e45e169bc514d3d99dd34d8d01ca7ae7830b5b8b537e46ae8f3c8f932371b0875c0151d7ec91
+  languageName: node
+  linkType: hard
+
+"cross-fetch@npm:^3.0.2":
+  version: 3.2.0
+  resolution: "cross-fetch@npm:3.2.0"
+  dependencies:
+    node-fetch: "npm:^2.7.0"
+  checksum: 10c0/d8596adf0269130098a676f6739a0922f3cc7b71cc89729925411ebe851a87026171c82ea89154c4811c9867c01c44793205a52e618ce2684650218c7fbeeb9f
   languageName: node
   linkType: hard
 
@@ -8325,6 +8478,13 @@ __metadata:
   version: 3.0.3
   resolution: "dateformat@npm:3.0.3"
   checksum: 10c0/2effb8bef52ff912f87a05e4adbeacff46353e91313ad1ea9ed31412db26849f5a0fcc7e3ce36dbfb84fc6c881a986d5694f84838ad0da7000d5150693e78678
+  languageName: node
+  linkType: hard
+
+"dayjs@npm:^1.10.4":
+  version: 1.11.13
+  resolution: "dayjs@npm:1.11.13"
+  checksum: 10c0/a3caf6ac8363c7dade9d1ee797848ddcf25c1ace68d9fe8678ecf8ba0675825430de5d793672ec87b24a69bf04a1544b176547b2539982275d5542a7955f35b7
   languageName: node
   linkType: hard
 
@@ -13056,6 +13216,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"leaflet.markercluster@npm:^1.5.3":
+  version: 1.5.3
+  resolution: "leaflet.markercluster@npm:1.5.3"
+  peerDependencies:
+    leaflet: ^1.3.1
+  checksum: 10c0/ce2d4065da00c727f5b05fe4568e5239ebd2556e45d859307ff9c44a6f7ecb9658cd91d055f5723d93f3e491c48949cf78109f50533b0b36b9a226e4d339213f
+  languageName: node
+  linkType: hard
+
+"leaflet@npm:^1.9.4":
+  version: 1.9.4
+  resolution: "leaflet@npm:1.9.4"
+  checksum: 10c0/f639441dbb7eb9ae3fcd29ffd7d3508f6c6106892441634b0232fafb9ffb1588b05a8244ec7085de2c98b5ed703894df246898477836cfd0ce5b96d4717b5ca1
+  languageName: node
+  linkType: hard
+
 "lerna@npm:^3.22.1":
   version: 3.22.1
   resolution: "lerna@npm:3.22.1"
@@ -14256,7 +14432,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^2.5.0, node-fetch@npm:^2.6.7":
+"node-fetch@npm:^2.5.0, node-fetch@npm:^2.6.7, node-fetch@npm:^2.7.0":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
   dependencies:
@@ -15744,6 +15920,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ramda@npm:^0.27.2":
+  version: 0.27.2
+  resolution: "ramda@npm:0.27.2"
+  checksum: 10c0/1bbcb5bcde33ab2669810644f920b8af4e228967ff800962100803dcdad57b09c5eeee50d9871c74aa20ce496a2d96ec48774e545d7943c8f742ccac5e0fa072
+  languageName: node
+  linkType: hard
+
 "randombytes@npm:^2.1.0":
   version: 2.1.0
   resolution: "randombytes@npm:2.1.0"
@@ -15871,6 +16054,32 @@ __metadata:
   version: 18.3.1
   resolution: "react-is@npm:18.3.1"
   checksum: 10c0/f2f1e60010c683479e74c63f96b09fb41603527cd131a9959e2aee1e5a8b0caf270b365e5ca77d4a6b18aae659b60a86150bb3979073528877029b35aecd2072
+  languageName: node
+  linkType: hard
+
+"react-leaflet@npm:*":
+  version: 5.0.0
+  resolution: "react-leaflet@npm:5.0.0"
+  dependencies:
+    "@react-leaflet/core": "npm:^3.0.0"
+  peerDependencies:
+    leaflet: ^1.9.0
+    react: ^19.0.0
+    react-dom: ^19.0.0
+  checksum: 10c0/f0b6fb797cc2d81bc8cbb54e0cb32aefa689d35ca5f52d203ce3c5a1d14668e51244f10844bd2c88d5cb4aca5eb05bc280794e6d1652727ff9da2358e89d1b86
+  languageName: node
+  linkType: hard
+
+"react-leaflet@npm:4.2.1":
+  version: 4.2.1
+  resolution: "react-leaflet@npm:4.2.1"
+  dependencies:
+    "@react-leaflet/core": "npm:^2.1.0"
+  peerDependencies:
+    leaflet: ^1.9.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: 10c0/2e9d1687e883fd7d2e9798e51a04600e1b14784dc98b981a44507e65eb39a24f08c7f237c7522ae5667e999eb53b8d565ebd0f5baa25ef73a0278d6bfcc369e1
   languageName: node
   linkType: hard
 
@@ -18851,6 +19060,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"url-search-params-polyfill@npm:^7.0.0":
+  version: 7.0.1
+  resolution: "url-search-params-polyfill@npm:7.0.1"
+  checksum: 10c0/d57af5b9dfd33fd7ac5fca664bf007681339583cfb799b7df559df8556f9ee2c93b8ee4809ea7dfb3bb16bbb2f2cc4db9d72338d1a20615b23aba6cb26c3de4b
+  languageName: node
+  linkType: hard
+
 "url@npm:^0.11.0":
   version: 0.11.4
   resolution: "url@npm:0.11.4"
@@ -19669,5 +19885,26 @@ __metadata:
   version: 2.1.2
   resolution: "yoctocolors-cjs@npm:2.1.2"
   checksum: 10c0/a0e36eb88fea2c7981eab22d1ba45e15d8d268626e6c4143305e2c1628fa17ebfaa40cd306161a8ce04c0a60ee0262058eab12567493d5eb1409780853454c6f
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "zustand@npm:5.0.2"
+  peerDependencies:
+    "@types/react": ">=18.0.0"
+    immer: ">=9.0.6"
+    react: ">=18.0.0"
+    use-sync-external-store: ">=1.2.0"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    immer:
+      optional: true
+    react:
+      optional: true
+    use-sync-external-store:
+      optional: true
+  checksum: 10c0/d9bb048d8129fd1aaed3fda974991b15a7c9c31ef06f78e9bf5c4b3678f249850764a6dadb8c93127257d07831995cf7a048281658a37c5d1143ad6f397fe37c
   languageName: node
   linkType: hard

@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "module": "ESNext",
+    "composite": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "src",
+    "typeRoots": ["./node_modules/@types", "../../node_modules/@types"],
+    "moduleResolution": "node",
+    "paths": {
+      "styles": ["./dist/styles"]
+    },
+    "jsx": "react-jsx"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
