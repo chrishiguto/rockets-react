@@ -1738,10 +1738,6 @@ __metadata:
     leaflet: "npm:^1.9.4"
     leaflet.markercluster: "npm:^1.5.3"
     react-leaflet: "npm:4.2.1"
-    react-router: "npm:^6.26.0"
-    react-router-dom: "npm:^6.26.0"
-    react-toastify: "npm:^10.0.5"
-    zustand: "npm:^5.0.2"
   peerDependencies:
     "@cubejs-client/core": ^1.0.0
     "@cubejs-client/react": ^1.0.0
@@ -19885,26 +19881,5 @@ __metadata:
   version: 2.1.2
   resolution: "yoctocolors-cjs@npm:2.1.2"
   checksum: 10c0/a0e36eb88fea2c7981eab22d1ba45e15d8d268626e6c4143305e2c1628fa17ebfaa40cd306161a8ce04c0a60ee0262058eab12567493d5eb1409780853454c6f
-  languageName: node
-  linkType: hard
-
-"zustand@npm:^5.0.2":
-  version: 5.0.2
-  resolution: "zustand@npm:5.0.2"
-  peerDependencies:
-    "@types/react": ">=18.0.0"
-    immer: ">=9.0.6"
-    react: ">=18.0.0"
-    use-sync-external-store: ">=1.2.0"
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    immer:
-      optional: true
-    react:
-      optional: true
-    use-sync-external-store:
-      optional: true
-  checksum: 10c0/d9bb048d8129fd1aaed3fda974991b15a7c9c31ef06f78e9bf5c4b3678f249850764a6dadb8c93127257d07831995cf7a048281658a37c5d1143ad6f397fe37c
   languageName: node
   linkType: hard
