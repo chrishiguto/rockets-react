@@ -1,0 +1,54 @@
+{
+  "name": "@concepta/react-data-viz",
+  "version": "2.0.0-alpha.20",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    },
+    "@types/react-dom": {
+      "optional": true
+    }
+  },
+  "optionalDependencies": {
+    "@cubejs-client/core": "^1.0.0",
+    "@cubejs-client/react": "^1.0.0",
+    "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3"
+  },
+  "peerDependencies": {
+    "@cubejs-client/core": "^1.0.0",
+    "@cubejs-client/react": "^1.0.0",
+    "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@react-leaflet/core": "^3.0.0",
+    "react-leaflet": "4.2.1"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1",
+    "@types/leaflet.markercluster": "^1",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/react-leaflet": "^3.0.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx|js|jsx)$": "ts-jest"
+    }
+  }
+}

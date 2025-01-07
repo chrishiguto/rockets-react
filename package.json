@@ -59,7 +59,8 @@
   "scripts": {
     "postinstall": "husky install",
     "clean": "./node_modules/.bin/rimraf packages/*/dist packages/*/tsconfig.tsbuildinfo",
-    "build": "./node_modules/.bin/tsc --build",
+    "build": "./node_modules/.bin/tsc --build && yarn copy:css",
+    "copy:css": "node copy-css.js",
     "watch": "yarn build && ./node_modules/.bin/tsc --build --watch",
     "prepublish": "yarn clean && yarn build",
     "lint": "eslint \"packages/**/{src,test}/**/*.{ts,js,json}\"",
